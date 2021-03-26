@@ -1,0 +1,124 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.navbar{
+	box-shadow: 0 5px 10px #e2e5de;
+	text-transform: uppercase;
+	background-size: cover;
+  background:linear-gradient(to right,rgb(8, 190, 78),rgb(7, 131, 180));
+
+}
+
+.nav-link{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+color: rgb(255, 255, 255);
+
+
+}
+
+.nav-item a:hover{
+ 
+  color: rgb(10, 243, 68);
+  
+  }
+.carousel-caption{
+    bottom: 30px;
+
+}
+
+
+
+
+.client .carousel-item{
+    height: 60vh;
+    min-height: 100px;
+
+  
+
+}
+.carousel-item .btn{font-size: 20px; 
+
+  background:  linear-gradient(to right,rgb(57, 247, 9),rgb(245, 245, 61)); line-height: normal;}
+
+  
+  .carousel-item .btn:hover{
+   background: linear-gradient(to right,rgb(218, 203, 3),rgb(14, 221, 59));
+  }
+
+
+
+
+
+.about-section p{ font-size: 16px; line-height: 28px;}
+.service-box h4{font-size: 24px;}
+.contact-section{background:linear-gradient(to right,rgb(163, 233, 163),rgb(12, 209, 117),rgb(169, 228, 7)) }
+.contact-box .form-control{ height:50px;}
+.contact-box textarea.form-control{ height:150px;}
+.address-box p{ font-size: 16px; line-height: 28px;}
+span{
+    background: linear-gradient(to right,#70f03d,#45b5e9);
+   -webkit-background-clip: text; 
+  color: transparent;
+  
+  }
+  
+ 
+
+
+
+  .service-bo{
+    height: 210px;
+
+    box-shadow: 0 0 4px 0 #dfee0d;
+   
+    position: relative;
+    background: linear-gradient(to right,rgb(243, 243, 243),rgb(140, 241, 171));
+  }
+    
+    .service-bo:hover{
+   
+      background: linear-gradient(to right,rgb(233, 229, 12),rgb(20, 224, 64));
+    }
+    
+  
+
+
+
+
+    @media(max-width:991px){
+      #focuzSlider .carousel-caption h2 {
+          font-size: 30px;
+      padding-top: 20px;
+      padding-bottom: 14px;
+  
+      }
+    #focuzSlider .carousel-img {
+          max-width: 100vh;
+      
+      }
+  
+  
+  
+  }
+  @media(max-width:767px){
+      .header-section .navbar-brand img {
+          width: 200px;
+      }	#focuzSlider .carousel-img {
+          max-width: 100vh;
+      
+      }
+  
+    #focuzSlider .carousel-caption h2 {
+      padding-top:40px;
+          font-size: 20px;
+
+    }
+    .carousel-item{
+      height: 60vh;
+    }
+    .header-section{background:linear-gradient(to right,#66f76d,rgb(226, 236, 218));}
+  }
+  }
+  
