@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 header,
-section {
+section,footer {
   overflow-x: hidden;
 }
 
