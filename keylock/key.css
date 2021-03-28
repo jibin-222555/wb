@@ -2,6 +2,10 @@
 	padding: 0px;
 
 }
+header,
+section {
+  overflow-x: hidden;
+}
 
 
 
