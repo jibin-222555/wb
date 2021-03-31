@@ -255,6 +255,8 @@ frameborder:0px;
 		padding-left: 4px;
 
 }
-
+.carousel-item {
+    height: 70vh;
+}
 }
 }
