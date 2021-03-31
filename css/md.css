@@ -330,10 +330,7 @@ font-weight: bold;
     .w-100
   {
   object-fit: cover;
-    object-position: center; /* Center the image within the element */
-    width: 100%;
-   height: 600px;
-    margin-bottom: 1rem;
+   
    
   }
 }
