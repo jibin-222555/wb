@@ -6,25 +6,33 @@ header,
 section {
   overflow-x: hidden;
 }
+span{
+  background: linear-gradient(to bottom,#09ffef,#008fd1);
+ -webkit-background-clip: text; 
+ background-clip: text; 
+color: transparent;
+font-weight: bold;
+
+}
 
 header a {
   font-family: sans-serif;
-  font-size: 0.9em;
+  font-size: 15px;
   color: whitesmoke;
 }
 
 header .nav-item:last-child {
-  padding-right: 7.5em;
+  padding-right: 48px;
 }
 header .nav-item {
-  padding: 0.7em;
+  padding: 10px;
 }
 
 header .navbar-brand {
-  padding-left: 8rem;
+  padding-left: 58px;
 }
 header .nav-link:hover {
-  color: rgb(26, 232, 247);
+   color: rgb(120 241 250);
 }
 
 .carousel-caption h5{
@@ -56,8 +64,9 @@ header .nav-link:hover {
   margin-top: 15px;
   
 }
-.carousel-caption a:hover{
-	background: linear-gradient(rgb(7, 131, 202),rgb(13, 218, 233));
+.carousel-caption a:hover {
+  background: linear-gradient(rgb(7, 131, 202), rgb(13, 218, 233));
+  color: white;
 }
 
 .carousel-item{
@@ -73,125 +82,274 @@ header .nav-link:hover {
 
 
 /********** section 2 **************/
+/********** our companies **************/
 
 
-.service-area{
-	padding: 30px 0;
-}
-.single-services{
-	height: 200px;
-	padding: 20px 15px;
-	width: 100%;
-	color: #fff;
-	background: rgb(247, 244, 244);
-	position: relative;
-	overflow: hidden;
-transform: translateY(0) translateZ(0);
-transition: all 0.3s ease-in-out 0s;
 
+.service-area {
+  padding: 30px 0;
 }
-.single-services .content{
-	position: relative;
-	z-index: 2;
-	text-align: center;
+.single-services {
+  height: 200px;
+  padding: 20px 15px;
+  width: 100%;
+background: rgb(247, 244, 244);
+  position: relative;
+  overflow: hidden;
+  transform: translateY(0) translateZ(0);
+  transition: all 0.3s ease-in-out 0s;
 }
-.single-services b{
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	display: block;
-	border-radius: 50%;
-	transition: width 0.6s ease-in-out,height 0.6s ease-in-out;
-	height: 0;
-	width: 0;
-	transform: translate(-50%,-50%);
-	background: linear-gradient(to top,rgb(94, 236, 94),rgb(42, 235, 219));
-	z-index: 1;
+.single-services .content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
 }
-.content h2{
-	text-transform: uppercase;
-	font-weight: 900;
-	margin-top: 20px;
-	margin-bottom: 20px;
+.single-services b {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  border-radius: 50%;
+  transition: width 0.6s ease-in-out, height 0.6s ease-in-out;
+  height: 0;
+  width: 0;
+  transform: translate(-50%, -50%);
+ background: linear-gradient(to right, rgb(79 245 176), rgb(14 123 187));
+  z-index: 1;
 }
-.single-services:hover b{
-	height: 600px;
-	width: 600px;
+.content h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
 }
 
+.single-services:hover b {
+  height: 600px;
+  width: 600px;
+}
+
+
+.single-services:hover a {
+  color: rgb(243, 242, 241);
+  transition: 0.9s;
+}
 .content a{
-	background: linear-gradient(rgb(7, 131, 202),rgb(13, 218, 233));
-	text-decoration: none;
-	color: rgb(252, 253, 253);
-	display: inline-block;
-	padding: 10px 30px;
-	border-radius: 50px;
-	text-transform: uppercase;
-	font-weight: 900;
+  background: linear-gradient(rgb(7, 131, 202),rgb(13, 218, 233));
+  text-decoration: none;
+  color: rgb(252, 253, 253);
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
 }
-.single-services:hover a{
-	color: rgb(243, 242, 241);
-	transition: 0.9s;
-}
-
-
-
-.serv{
-    background: linear-gradient(to bottom,rgb(244, 245, 245),rgba(210, 224, 233, 0.829))
-}
-.card-wrapper{
-	height: 230px;
-	width: 100%;
-	perspective: 1000px;
+.content a:hover{
+  background: linear-gradient(rgb(66 139 161),rgb(136 236 241));
   
+}
+/********** services **************/
 
+
+.serv {
+  background: linear-gradient(
+    to bottom,
+    rgb(244, 245, 245),
+    rgba(210, 224, 233, 0.829)
+  );
 }
-.content{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	transition: transform 0.8s;
-	transform-style: preserve-3d;
+.card-wrapper {
+  height: 230px;
+  width: 100%;
+  perspective: 1000px;
 }
-.card-wrapper:hover .content{
-	transform: rotateY(180deg);
-	transition: 1x;
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
+.card-wrapper:hover .content {
+  transform: rotateY(180deg);
+  transition: 1x;
+}
+.face-front,
+.face-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+ 
+}
+.face-front {
+  padding-top: 15px;
+  background: linear-gradient(to right, rgb(58, 241, 226), rgb(34, 152, 219));
+}
+.face-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(to right, rgb(79, 187, 250),rgb(10, 157, 255));
+}
+
+
 .face-front, .face-back{
-	position: absolute;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
  background: linear-gradient(to right,rgb(58, 241, 226),rgb(34, 152, 219))
 
 
 }
 .face-back{
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
 
-	
-}.address-box p{ font-size: 16px; line-height: 28px;}
+  
 
-.contact-section{background: linear-gradient(to right,rgba(4, 74, 102, 0.993),rgb(35, 235, 235)); background-repeat: no-repeat;; }
 
-span{
-  background: linear-gradient(to right,#40a2f3,#24ddfd);
- -webkit-background-clip: text; 
-color: transparent;
-font-weight: bold;
 
 }
+/********** contact **************/
+
+.address-box p {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0 3;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+}
+
+.rounded-social-buttons .fa-twitter,
+.fa-facebook-f,
+.fa-linkedin,
+.fa-youtube,
+.fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:hover {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: linear-gradient(rgb(218, 103, 8), rgb(253, 33, 224));
+}
+
+.rounded-social-buttons .social-button.instagram:hover {
+  color: #dd0dcc;
+  background: #fefefe;
+  border-color: #f35f09;
+}
+
+
+.contact-section {
+  background: linear-gradient(
+    to right,
+    rgba(4, 74, 102, 0.993),
+    rgb(35, 235, 235)
+  );
+  background-repeat: no-repeat;
+}
+
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(to right,rgb(3, 52, 143),rgb(32, 224, 224));
+  background: linear-gradient(to right, rgb(3, 52, 143), rgb(32, 224, 224));
   z-index: 9999;
   transition: all 1.5s ease;
 }
+.ab h1{
+  background: linear-gradient(to bottom,#09ffef,#008fd1);
+  background-clip: text; 
+  -webkit-background-clip: text; 
+ color: transparent;
+ 
+}
+
+
+.mm{
+padding: 20px 40px  ;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
 
 @media (max-width:991px)
 
@@ -199,7 +357,44 @@ font-weight: bold;
   header .navbar-brand {
     padding-left: 1rem;
   }
- 
+ .carousel-item{
+  position: relative;
+}
+
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 65px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+.carousel-caption h5{
+  font-size: 26px;
+  text-transform: uppercase;
+  
+  margin-top: 25px;
+}
+.carousel-caption h1{
+  font-size: 32px;
+  text-transform: uppercase;
+  
+  margin-top: 10px;
+}
+.carousel-caption a{
+  text-transform: uppercase;
+
+  padding: 10px 30px;
+  display: inline-block;
+
+  margin-top: 15px;
+    font-size: 12px;
+  
+}
+
   .navbar-toggler-icon {
     display: inline-block;
     width: 1.5em;
@@ -228,37 +423,7 @@ font-weight: bold;
 
 
 
-
-
-  .carousel-caption h5{
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
   
-  }
-  .carousel-caption h1{
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-   
-  }
-  
-  .carousel-caption p{
-  
-    margin: auto;
-    font-size: 14px;
-    line-height: 1.9;
-    font-family: sans-serif;
-  }
-  .carousel-caption a{
-    text-transform: uppercase;
-    background: rgb(231 239 227);
-    padding: 10px 30px;
-    display: inline-block;
-    color: rgb(28 105 220);
-    margin-top: 15px;
-    
-  }
 
 
   header .nav-item {
@@ -269,13 +434,27 @@ font-weight: bold;
   .section-2 .cover {
     background-position: -25vmin -10vmin;
   }
-  
+     .w-100
+  {
+  object-fit: cover;
+   
+   
+  }
+    .single-services .content img{
+    height: 70px;
+    width: 180px;
+  }
+  .contact-section  .address-box p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
 }
 
 
 
 
-@media (max-width:768px)
+@media (max-width:767px)
 
  {
   header .navbar-brand {
@@ -303,7 +482,9 @@ font-weight: bold;
     transition: all 1.5s ease;
   }
   
-
+.carousel-item{
+  position: relative;
+}
 
   .carousel-caption {
     position: absolute;
@@ -316,8 +497,33 @@ font-weight: bold;
     color: #fff;
     text-align: center;
 }
+.carousel-caption h5{
+  font-size: 16px;
+  text-transform: uppercase;
+  
+  margin-top: 25px;
+}
+.carousel-caption h1{
+  font-size: 22px;
+  text-transform: uppercase;
+  
+  margin-top: 10px;
+}
+.carousel-caption a{
+  text-transform: uppercase;
 
+  padding: 10px 30px;
+  display: inline-block;
 
+  margin-top: 15px;
+    font-size: 12px;
+  
+}
+
+ .contact-section  .address-box p {
+  font-size: 16px;
+  
+}
 
   header .nav-item {
     padding: 0.7em;
@@ -333,6 +539,8 @@ font-weight: bold;
    
    
   }
+
+
 }
 
 
