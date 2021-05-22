@@ -1,4 +1,3 @@
-
 {
     margin: 0;
     padding: 0;
@@ -188,7 +187,7 @@ font-weight: 700;
 
 
   footer .column i {
-	color: #dd2476;
+	color: #dd2424;
   }
   
 
@@ -259,31 +258,35 @@ header	.navigation{
 			font-weight: 300;
 			
 				}
-	.toggle{
-		position: relative;
-		width: 30px;
-		height: 30px;
-		background: orange;
-		background-size: 30px;
-		background-repeat: no-repeat;
-		background-position: center;
-		cursor: pointer;
-		z-index: 10000;
-	}
-	.toggle.active
-	{
-		position: fixed;
-		background: black;
-		background-size: 25px;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
+.toggle{
+position: relative;
+width: 30px;
+height: 30px;
+background: url('ff.png');
+background-size: 30px;
+background-repeat: no-repeat;
+background-position: center;
+cursor: pointer;
+z-index: 10000;
+}
+.toggle.active
+{
+position: fixed;
+background: url(cll.png);
+background-size: 25px;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+
+element.style {
+}
 
 }
 
 
 	
-@media (max-width:771px)
+@media (max-width:767px)
 	  
 { header {
 padding: 40px;
@@ -383,7 +386,5 @@ justify-content: center;
     padding-top: 10px;
     padding-bottom: 1px;
 }
-
-
 
 
