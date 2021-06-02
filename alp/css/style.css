@@ -37,11 +37,13 @@ header .nav-link {
   font-size: 0.9em;
   color: #fff;
   border: solid 1px rgba(255, 255, 255, 0);
-  border-radius: 30px;
+  border-radius: 40px;
+
 }
 header .nav-link:hover {
   border: solid 1px #ffffff;
   background: #ffffff;
+ 
 }
 
 
@@ -177,6 +179,28 @@ padding: 30px 12px 2px;
 
 
 
+
+.we-offer-area.text-center .item button{
+  background: linear-gradient(
+    to right,
+    rgb(255 88 13 / 80%),
+    rgb(243 15 15 / 80%)
+  );
+
+border:none;
+}
+
+
+
+.we-offer-area.text-center .item button:hover{
+  background: linear-gradient(
+    to right,
+    rgb(235 85 10 / 80%),
+    rgb(222 248 42 / 80%)
+  );
+
+
+}
 
 
 
@@ -322,123 +346,6 @@ padding: 30px 12px 2px;
   border-color: #125688;
 }
 
-/* Wrapper */
-.icon-button {
-  background-color: white;
-  border-radius: 2.6rem;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.3rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
-  margin: 0 5px;
-  position: relative;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 2.6rem;
-}
-
-/* Circle */
-.icon-button span {
-  border-radius: 0;
-  display: block;
-  height: 0;
-  left: 50%;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 0;
-}
-.icon-button:hover span {
-  width: 2.6rem;
-  height: 2.6rem;
-  border-radius: 2.6rem;
-  margin: -1.3rem;
-}
-
-/* Icons */
-.icon-button i {
-  background: none;
-  color: white;
-  height: 2.6rem;
-  left: 0;
-  line-height: 2.6rem;
-  position: absolute;
-  top: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 2.6rem;
-  z-index: 10;
-}
-
-.fb {
-  background-color: #fff;
-  padding: 25px;
-  text-align: center;
-}
-
-.twitter span {
-  background-color: #4099ff;
-}
-.facebook span {
-  background-color: #3b5998;
-}
-.google-plus span {
-  background-color: #db5a3c;
-}
-.tumblr span {
-  background-color: #34526f;
-}
-.instagram span {
-  background-color: #517fa4;
-}
-.youtube span {
-  background-color: #bb0000;
-}
-.pinterest span {
-  background-color: #cb2027;
-}
-
-.icon-button .icon-twitter {
-  color: #4099ff;
-}
-.icon-button .icon-facebook {
-  color: #3b5998;
-}
-.icon-button .fa-tumblr {
-  color: #34526f;
-}
-.icon-button .icon-google-plus {
-  color: #db5a3c;
-}
-.icon-button .fa-instagram {
-  color: #517fa4;
-}
-.icon-button .fa-youtube {
-  color: #bb0000;
-}
-.icon-button .fa-pinterest {
-  color: #cb2027;
-}
-
-.icon-button:hover .icon-twitter,
-.icon-button:hover .icon-facebook,
-.icon-button:hover .icon-google-plus,
-.icon-button:hover .fa-tumblr,
-.icon-button:hover .fa-instagram,
-.icon-button:hover .fa-youtube,
-.icon-button:hover .fa-pinterest {
-  color: white;
-}
 .address-box a:hover{
   color: white;
 }
@@ -530,7 +437,7 @@ padding: 30px 12px 2px;
 .we-offer-area.text-center .item {
   background: linear-gradient(to bottom,rgb(255 252 252),rgb(246 243 243));
 border: medium none;
-padding: 5px 1px 2px;
+
 }
  
   .section-2 .cover {
@@ -568,6 +475,18 @@ padding: 5px 1px 2px;
     background: rgb(252, 250, 250);
   }
 
+header .nav-link {
+  font-family: sans-serif;
+  font-size: 0.9em;
+  color: #fff;
+  border: solid 1px rgba(255, 255, 255, 0);
+  border-radius: 30px;
+}
+header .nav-link:hover {
+  border: solid 1px #ffffff;
+  background: #ffffff;
+   width:98px;
+}
 
  
 
@@ -651,6 +570,11 @@ header .nav-link {
   border: solid 1px rgba(255, 255, 255, 0);
   border-radius: 30px;
 }
-
+.carousel-caption a {
+    text-transform: uppercase;
+    padding: 5px 20px;
+    display: inline-block;
+    color: whitesmoke;
+    margin-top: 10px;
 }
-
+}
