@@ -1,7 +1,11 @@
 * {
   box-sizing: border-box;
+     margin: 0;
+    padding: 0;}
+     
+html{
+  scroll-behavior: smooth;
 }
-
 header,
 section {
   overflow-x: hidden;
@@ -32,9 +36,10 @@ header .navbar-brand {
   padding-left: 58px;
 }
 header .nav-link:hover {
-   color: rgb(120 241 250);
-}
+ color: rgb(245 169 7);
 
+   background:white;
+}
 .carousel-caption h5{
   font-size: 35px;
   text-transform: uppercase;
@@ -99,26 +104,17 @@ background: rgb(247, 244, 244);
   transform: translateY(0) translateZ(0);
   transition: all 0.3s ease-in-out 0s;
 }
-.single-services .content {
+.single-services:hover{
+  height: 200px;
+  padding: 20px 15px;
+  width: 100%;
+background: rgb(247, 244, 244);
   position: relative;
-  z-index: 2;
-  text-align: center;
+  overflow: hidden;
+  transform: translateY(0) translateZ(0);
+  transition: all 0.3s ease-in-out 0s;
 }
-.single-services b {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  border-radius: 50%;
-  transition: width 0.6s ease-in-out, height 0.6s ease-in-out;
-  height: 0;
-  width: 0;
-  transform: translate(-50%, -50%);
- background: linear-gradient(to right, rgb(79 245 176), rgb(14 123 187));
-  z-index: 1;
-}
+
 .content h2 {
   text-transform: uppercase;
   font-weight: 900;
@@ -148,7 +144,7 @@ background: rgb(247, 244, 244);
   font-weight: 900;
 }
 .content a:hover{
-  background: linear-gradient(rgb(66 139 161),rgb(136 236 241));
+  background: linear-gradient(rgb(66 139 161),rgb(7, 131, 202));
   
 }
 /********** services **************/
@@ -241,9 +237,9 @@ background: rgb(247, 244, 244);
   transition: all 0.5s ease;
 }
 
-.rounded-social-buttons .fa-twitter,
+.rounded-social-buttons 
 .fa-facebook-f,
-.fa-linkedin,
+
 .fa-youtube,
 .fa-instagram {
   font-size: 25px;
@@ -309,45 +305,6 @@ background: rgb(247, 244, 244);
 
 .mm{
 padding: 20px 40px  ;
-}
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
 }
 
 
@@ -448,7 +405,18 @@ padding: 20px 40px  ;
   font-size: 12px;
   line-height: 18px;
 }
+ header .nav-link{
 
+
+  
+}
+
+header .nav-link:hover {
+ color: rgb(245 169 7);
+
+
+   background:none;
+}
 }
 
 
@@ -539,8 +507,18 @@ padding: 20px 40px  ;
    
    
   }
+  header .nav-link{
 
 
+  
 }
 
+header .nav-link:hover {
+ color: rgb(245 169 7);
+
+
+   background:none;
+}
+
+}
 
