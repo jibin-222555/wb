@@ -179,26 +179,42 @@ font-weight: 700;
 
 
   footer {
-	background:linear-gradient(to bottom,#0ae60a,#05a7d8);
-	overflow-x: hidden;
-	padding: 12vmin 18vmin;
-  }
+	background:black;
+	
+
+padding: 88px 25px;
+}
+
+
+
+footer input {
+  border: none!important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: linear-gradient(to bottom,#17f5f5,#0af015);
+  border: none;
+}
+
+footer .column i {
+     color: #ed2c0d;
+    background: linear-gradient(to bottom,#17f5f5,#0af015);
+    height: 25px;
+    width: 30px;
+    overflow: hidden;
+    padding: 5px 5px;
+}
+
+
+
+footer .column i:hover{
+     background: linear-gradient(to bottom,#40d30f,#2cecec);
+}
   
-
-
-  footer .column i {
-	color: #dd2424;
-  }
-  
-
-  footer .column i + i {
-	padding: 0 0.5em;
-  }
-  
-
-
-
-
 
 
 
