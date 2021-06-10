@@ -19,3 +19,9 @@ $(window).scroll(function () {
     navbar.removeClass("sticky");
   }
 });
+
+
+  AOS.init({
+    easing:'ease',
+    duration:1000,
+  });
